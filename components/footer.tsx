@@ -10,13 +10,13 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/logo-white.png"
+              src="/logo-new.png"
               alt="Blumenstube Neuenstadt"
               width={200}
-              height={99}
-              className="h-16 w-auto opacity-80 mb-5"
+              height={133}
+              className="h-20 w-auto mb-5 drop-shadow-lg"
             />
-            <p className="text-white/40 text-sm leading-relaxed">
+            <p className="text-white/75 text-sm leading-relaxed">
               Das etwas andere Blumenfachgeschäft – seit 1995 in Neuenstadt am
               Kocher. Qualität, Handwerk und Leidenschaft für Blumen.
             </p>
@@ -24,7 +24,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/30 mb-5">
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-5">
               Navigation
             </h4>
             <ul className="space-y-3">
@@ -38,7 +38,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-primary transition-colors"
+                    className="text-sm text-white/70 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -49,17 +49,17 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/30 mb-5">
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-5">
               Kontakt
             </h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-sm text-white/50">
+              <li className="flex items-center gap-3 text-sm text-white/70">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
                 <a href="tel:071396708" className="hover:text-white transition-colors">
                   07139 6708
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-white/50">
+              <li className="flex items-center gap-3 text-sm text-white/70">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
                 <a
                   href="mailto:blumenstube-neuenstadt@t-online.de"
@@ -68,7 +68,7 @@ export function Footer() {
                   blumenstube-neuenstadt@t-online.de
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-sm text-white/50">
+              <li className="flex items-start gap-3 text-sm text-white/70">
                 <MapPin className="w-4 h-4 text-brand-green shrink-0 mt-0.5" />
                 <span>Neuenstadt am Kocher</span>
               </li>
@@ -77,17 +77,17 @@ export function Footer() {
 
           {/* Opening Hours */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/30 mb-5">
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-5">
               Öffnungszeiten
             </h4>
-            <ul className="space-y-2 text-sm text-white/50">
+            <ul className="space-y-2 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   <p>Mo–Fr: 09:00–12:30 &amp; 14:00–18:00</p>
                   <p>Sa: 09:00–14:00</p>
                   <p>So: 10:00–12:00</p>
-                  <p className="text-white/25 mt-2 text-xs">
+                  <p className="text-white/60 mt-2 text-xs">
                     Letzter Sonntag im Monat geschlossen
                   </p>
                 </div>
@@ -97,20 +97,20 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/8 mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-white/30">
+          <p className="text-xs text-white/60">
             &copy; {new Date().getFullYear()} Blumenstube Neuenstadt. Alle
             Rechte vorbehalten.
           </p>
           <div className="flex gap-6">
             <Link
               href="/impressum"
-              className="text-xs text-white/30 hover:text-white/50 transition-colors"
+              className="text-xs text-white/60 hover:text-white transition-colors"
             >
               Impressum
             </Link>
             <Link
               href="/datenschutz"
-              className="text-xs text-white/30 hover:text-white/50 transition-colors"
+              className="text-xs text-white/60 hover:text-white transition-colors"
             >
               Datenschutz
             </Link>

@@ -53,7 +53,7 @@ export function OccasionsSection() {
               Blumen sagen mehr
               <br className="hidden sm:block" /> als Worte
             </h2>
-            <p className="text-white/60 max-w-2xl mx-auto text-lg">
+            <p className="text-white/80 max-w-2xl mx-auto text-lg">
               Egal ob großes Fest oder kleine Geste – wir finden die passenden
               Blumen für Ihren Moment.
             </p>
@@ -72,7 +72,7 @@ export function OccasionsSection() {
                 <h3 className="font-serif font-bold text-white text-lg mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-white/50 leading-relaxed">
+                <p className="text-sm text-white/75 leading-relaxed">
                   {item.text}
                 </p>
               </div>

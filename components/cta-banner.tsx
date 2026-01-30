@@ -17,7 +17,7 @@ export function CtaBanner() {
             <br className="hidden sm:block" />
             etwas Schönes gestalten
           </h2>
-          <p className="text-white/70 text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-white/90 text-lg mb-12 max-w-2xl mx-auto">
             Ob spontaner Strauß oder große Feier – rufen Sie uns an oder
             schreiben Sie uns. Wir freuen uns auf Ihre Ideen.
           </p>
@@ -31,7 +31,7 @@ export function CtaBanner() {
             </a>
             <a
               href="/kontakt"
-              className="inline-flex items-center justify-center gap-3 bg-transparent text-white border-2 border-white/30 px-10 py-4.5 rounded-full text-base font-bold hover:bg-white/10 hover:border-white/50 transition-all hover:-translate-y-1"
+              className="inline-flex items-center justify-center gap-3 bg-transparent text-white border-2 border-white/50 px-10 py-4.5 rounded-full text-base font-bold hover:bg-white/10 hover:border-white/50 transition-all hover:-translate-y-1"
             >
               <Send className="w-5 h-5" />
               Anfrage senden

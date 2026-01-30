@@ -25,7 +25,7 @@ export function LocationTeaser() {
                   <br />
                   in Neuenstadt
                 </h2>
-                <p className="text-white/50 text-lg leading-relaxed mb-10">
+                <p className="text-white/80 text-lg leading-relaxed mb-10">
                   Unser Blumenfachgeschäft liegt zentral in Neuenstadt am
                   Kocher. Wir freuen uns darauf, Sie persönlich zu beraten.
                 </p>
@@ -68,8 +68,8 @@ export function LocationTeaser() {
             {/* Right: Store image */}
             <div className="relative min-h-[300px] lg:min-h-full">
               <Image
-                src="/logo.jpg"
-                alt="Blumenarrangement aus der Blumenstube Neuenstadt"
+                src="https://i.pinimg.com/736x/d2/e8/17/d2e81712760de144fd0459138cae8e34.jpg"
+                alt="Blumenladen der Blumenstube Neuenstadt"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -35,7 +35,7 @@ const services = [
     description:
       "Einfühlsam und würdevoll – Sargschmuck, Kränze, Gestecke und Kirchendekoration in respektvollem Gedenken.",
     image:
-      "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=600&q=80",
+      "https://i.pinimg.com/736x/3a/7a/53/3a7a5326dd32f7b427e503fec5e1227e.jpg",
     href: "/leistungen#trauer",
   },
   {

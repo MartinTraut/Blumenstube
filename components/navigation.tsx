@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X } from "lucide-react";
 
@@ -17,6 +18,11 @@ const links = [
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  // Only the homepage has a dark hero — all subpages have light backgrounds
+  const darkHeader = isHome && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -27,33 +33,37 @@ export function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-black/5 border-b border-border/50"
-          : "bg-transparent"
+        darkHeader
+          ? "bg-transparent"
+          : "bg-white/95 backdrop-blur-md shadow-lg shadow-black/5 border-b border-border/50"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 md:h-22">
-          {/* Logo */}
+          {/* Logo: text on home hero, image otherwise */}
           <Link href="/" className="relative shrink-0">
-            {/* Color logo when scrolled (white bg), white logo on hero (transparent bg) */}
-            <Image
-              src="/logo-transparent.png"
-              alt="Blumenstube Neuenstadt – Kranz- und Girlandenbinderei"
-              width={180}
-              height={89}
-              className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-300 ${
-                scrolled ? "opacity-100" : "opacity-0 absolute"
+            {/* Text name – only on homepage hero (not scrolled) */}
+            <span
+              className={`text-xl md:text-2xl font-serif font-bold tracking-tight transition-all duration-300 ${
+                darkHeader
+                  ? "opacity-100 text-white drop-shadow-lg"
+                  : "opacity-0 absolute pointer-events-none"
               }`}
-              priority
-            />
+            >
+              Blumenstube{" "}
+              <span className="text-brand-green">Neuenstadt</span>
+            </span>
+
+            {/* Logo image – visible when scrolled or on subpages */}
             <Image
-              src="/logo-white.png"
+              src="/logo-new.png"
               alt="Blumenstube Neuenstadt – Kranz- und Girlandenbinderei"
               width={180}
-              height={89}
-              className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-300 ${
-                scrolled ? "opacity-0 absolute" : "opacity-100"
+              height={120}
+              className={`h-13 md:h-16 w-auto object-contain transition-all duration-300 ${
+                darkHeader
+                  ? "opacity-0 absolute pointer-events-none"
+                  : "opacity-100"
               }`}
               priority
             />
@@ -66,9 +76,9 @@ export function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium tracking-wide transition-colors duration-200 ${
-                  scrolled
-                    ? "text-foreground/70 hover:text-primary"
-                    : "text-white/80 hover:text-white"
+                  darkHeader
+                    ? "text-white/90 hover:text-white"
+                    : "text-foreground/70 hover:text-primary"
                 }`}
               >
                 {link.label}
@@ -88,7 +98,7 @@ export function Navigation() {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className={`lg:hidden p-2 rounded-lg transition-colors ${
-                scrolled ? "text-foreground" : "text-white"
+                darkHeader ? "text-white" : "text-foreground"
               }`}
               aria-label="Menü öffnen"
             >

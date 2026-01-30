@@ -17,75 +17,70 @@ export function Hero() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 w-full">
-        <div className="max-w-2xl">
-          {/* Logo badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-8"
-          >
-            <Image
-              src="/logo-white.png"
-              alt="Blumenstube Neuenstadt"
-              width={260}
-              height={128}
-              className="h-20 md:h-28 w-auto drop-shadow-2xl"
-            />
-          </motion.div>
+      {/* Content – centered */}
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 w-full text-center">
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mb-8 flex justify-center"
+        >
+          <Image
+            src="/logo-new.png"
+            alt="Blumenstube Neuenstadt"
+            width={600}
+            height={400}
+            className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto drop-shadow-2xl"
+          />
+        </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.05] mb-6"
-          >
-            Blumen, die
-            <br />
-            <span className="text-brand">Geschichten</span>
-            <br />
-            erzählen.
-          </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1] mb-6"
+        >
+          Blumen, die{" "}
+          <span className="text-brand">Geschichten</span> erzählen.
+        </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-lg"
-          >
-            Seit 1995 gestalten wir mit Leidenschaft und Handwerk individuelle
-            Floristik für jeden Anlass – persönlich, frisch und mit Liebe zum
-            Detail.
-          </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-lg md:text-xl text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto"
+        >
+          Seit 1995 gestalten wir mit Leidenschaft und Handwerk individuelle
+          Floristik für jeden Anlass – persönlich, frisch und mit Liebe zum
+          Detail.
+        </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex flex-col sm:flex-row gap-4"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <a
+            href="tel:071396708"
+            className="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1"
           >
-            <a
-              href="tel:071396708"
-              className="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1"
-            >
-              <Phone className="w-5 h-5" />
-              Jetzt anrufen
-            </a>
-            <a
-              href="/kontakt"
-              className="inline-flex items-center justify-center gap-3 bg-white/15 backdrop-blur-sm text-white border border-white/25 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/25 transition-all duration-300 hover:-translate-y-1"
-            >
-              <Send className="w-5 h-5" />
-              Anfrage senden
-            </a>
-          </motion.div>
-        </div>
+            <Phone className="w-5 h-5" />
+            Jetzt anrufen
+          </a>
+          <a
+            href="/kontakt"
+            className="inline-flex items-center justify-center gap-3 bg-white/20 backdrop-blur-sm text-white border border-white/40 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/25 transition-all duration-300 hover:-translate-y-1"
+          >
+            <Send className="w-5 h-5" />
+            Anfrage senden
+          </a>
+        </motion.div>
       </div>
 
       {/* Decorative gradient bottom */}

@@ -54,7 +54,7 @@ const services = [
     description:
       "In schweren Zeiten gestalten wir einfühlsam und mit Respekt: Sargschmuck, Kränze, Trauergestecke und Kirchendekoration. Wir beraten Sie persönlich und sorgen für eine würdevolle Umsetzung – auch kurzfristig.",
     image:
-      "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80",
+      "https://i.pinimg.com/736x/3a/7a/53/3a7a5326dd32f7b427e503fec5e1227e.jpg",
     steps: [
       { title: "Persönliche Beratung", text: "Einfühlsam und diskret – wir nehmen uns Zeit für Sie." },
       { title: "Individuelle Gestaltung", text: "Kränze, Gestecke und Schmuck nach Ihren Wünschen." },
