@@ -39,7 +39,7 @@ export function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18 md:h-22">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo: text on home hero, image otherwise */}
           <Link href="/" className="relative shrink-0">
             {/* Text name – only on homepage hero (not scrolled) */}
@@ -58,14 +58,16 @@ export function Navigation() {
             <Image
               src="/logo-new.png"
               alt="Blumenstube Neuenstadt – Kranz- und Girlandenbinderei"
-              width={180}
-              height={120}
-              className={`h-13 md:h-16 w-auto object-contain transition-all duration-300 ${
+              width={384}
+              height={256}
+              className={`h-12 md:h-16 w-auto object-contain transition-all duration-300 ${
                 darkHeader
                   ? "opacity-0 absolute pointer-events-none"
                   : "opacity-100"
               }`}
               priority
+              quality={100}
+              unoptimized
             />
           </Link>
 

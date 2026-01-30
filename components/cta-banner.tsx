@@ -7,12 +7,12 @@ export function CtaBanner() {
   return (
     <section className="py-24 md:py-32 bg-gradient-to-br from-primary via-primary to-primary/80 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-      <div className="absolute top-0 right-0 w-80 h-80 bg-brand-green/15 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 md:w-96 md:h-96 bg-white/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-48 h-48 md:w-80 md:h-80 bg-brand-green/15 rounded-full blur-3xl" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
             Lassen Sie uns gemeinsam
             <br className="hidden sm:block" />
             etwas Schönes gestalten

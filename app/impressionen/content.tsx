@@ -108,7 +108,7 @@ export function ImpressionenContent() {
       {/* Gallery Grid */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] sm:auto-rows-[200px] md:auto-rows-[250px] gap-3 sm:gap-4">
             {galleryImages.map((img, i) => (
               <ScrollReveal
                 key={i}
@@ -163,27 +163,27 @@ export function ImpressionenContent() {
                 e.stopPropagation();
                 prev();
               }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white p-2 z-10"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white p-3 z-10"
               aria-label="Vorheriges Bild"
             >
-              <ChevronLeft className="w-10 h-10" />
+              <ChevronLeft className="w-8 h-8 sm:w-10 sm:h-10" />
             </button>
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 next();
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white p-2 z-10"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white p-3 z-10"
               aria-label="Nächstes Bild"
             >
-              <ChevronRight className="w-10 h-10" />
+              <ChevronRight className="w-8 h-8 sm:w-10 sm:h-10" />
             </button>
             <motion.div
               key={lightbox}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="relative w-[90vw] h-[80vh] max-w-5xl"
+              className="relative w-[92vw] h-[70vh] sm:h-[80vh] max-w-5xl max-h-[90vh]"
               onClick={(e) => e.stopPropagation()}
             >
               <Image

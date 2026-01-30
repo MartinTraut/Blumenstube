@@ -14,7 +14,7 @@ export function OpeningHours() {
   return (
     <section className="py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-20 items-center">
           {/* Left: Image + Logo */}
           <ScrollReveal direction="left">
             <div className="relative">
@@ -28,9 +28,9 @@ export function OpeningHours() {
                 />
               </div>
               {/* Floating badge */}
-              <div className="absolute -bottom-6 -right-6 bg-primary text-white rounded-2xl p-5 shadow-xl shadow-primary/30">
-                <p className="text-3xl font-serif font-bold">seit</p>
-                <p className="text-4xl font-serif font-bold">1995</p>
+              <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-primary text-white rounded-2xl p-3 sm:p-5 shadow-xl shadow-primary/30">
+                <p className="text-2xl sm:text-3xl font-serif font-bold">seit</p>
+                <p className="text-3xl sm:text-4xl font-serif font-bold">1995</p>
               </div>
             </div>
           </ScrollReveal>

@@ -57,7 +57,7 @@ export function ServicesGrid() {
             <span className="inline-block text-sm font-semibold tracking-[0.2em] uppercase text-primary bg-primary/8 px-4 py-1.5 rounded-full mb-4">
               Unsere Leistungen
             </span>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground mb-5">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground mb-5">
               Floristik mit Herz
               <br className="hidden sm:block" />
               <span className="text-primary"> und Handwerk</span>
@@ -111,7 +111,7 @@ export function ServicesGrid() {
             <ScrollReveal key={service.title} delay={(i + 3) * 0.12}>
               <Link href={service.href} className="group block h-full">
                 <div className="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-border/50 h-full hover:-translate-y-1 md:flex">
-                  <div className="relative h-56 md:h-auto md:w-2/5 overflow-hidden shrink-0">
+                  <div className="relative h-48 sm:h-56 md:h-auto md:w-2/5 overflow-hidden shrink-0">
                     <Image
                       src={service.image}
                       alt={service.title}

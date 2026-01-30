@@ -57,7 +57,7 @@ export function KontaktContent() {
       {/* Quick Actions */}
       <section className="py-12 bg-white border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <ScrollReveal>
               <a
                 href="tel:071396708"

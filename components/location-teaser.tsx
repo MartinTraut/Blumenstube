@@ -15,12 +15,12 @@ export function LocationTeaser() {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-green/15 rounded-full blur-3xl" />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 relative z-10">
-            <div className="p-8 md:p-12 lg:p-16">
+            <div className="p-6 sm:p-8 md:p-12 lg:p-16">
               <ScrollReveal>
                 <span className="inline-block text-sm font-semibold tracking-[0.2em] uppercase text-primary bg-primary/15 px-4 py-1.5 rounded-full mb-6">
                   Standort
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight">
                   Besuchen Sie uns
                   <br />
                   in Neuenstadt
@@ -66,7 +66,7 @@ export function LocationTeaser() {
             </div>
 
             {/* Right: Store image */}
-            <div className="relative min-h-[300px] lg:min-h-full">
+            <div className="relative min-h-[220px] sm:min-h-[280px] lg:min-h-full">
               <Image
                 src="https://i.pinimg.com/736x/d2/e8/17/d2e81712760de144fd0459138cae8e34.jpg"
                 alt="Blumenladen der Blumenstube Neuenstadt"

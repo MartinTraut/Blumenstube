@@ -109,9 +109,7 @@ export function LeistungenContent() {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
-                index % 2 === 1 ? "lg:direction-rtl" : ""
-              }`}
+              className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center"
             >
               <ScrollReveal
                 direction={index % 2 === 0 ? "left" : "right"}

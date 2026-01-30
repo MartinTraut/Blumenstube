@@ -120,7 +120,7 @@ export function WegContent() {
             <div className="lg:col-span-2">
               <ScrollReveal>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-border/50">
-                  <div className="relative aspect-[16/10] bg-secondary">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] bg-secondary">
                     {!mapLoaded ? (
                       <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8">
                         <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">

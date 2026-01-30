@@ -40,8 +40,8 @@ export function OccasionsSection() {
   return (
     <section className="py-24 md:py-32 bg-foreground text-white relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-green/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 md:w-96 md:h-96 bg-brand-green/10 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal>
@@ -60,19 +60,19 @@ export function OccasionsSection() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
           {occasions.map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 0.08}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 group hover:bg-white/10 hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 text-center border border-white/10 group hover:bg-white/10 hover:-translate-y-2 transition-all duration-300">
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center mx-auto mb-3 sm:mb-5 group-hover:scale-110 transition-transform duration-300`}
                 >
-                  <item.icon className="w-8 h-8 text-primary" />
+                  <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <h3 className="font-serif font-bold text-white text-lg mb-2">
+                <h3 className="font-serif font-bold text-white text-base sm:text-lg mb-1 sm:mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-white/75 leading-relaxed">
+                <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
                   {item.text}
                 </p>
               </div>

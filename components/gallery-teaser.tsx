@@ -57,7 +57,7 @@ export function GalleryTeaser() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[220px] gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] sm:auto-rows-[180px] md:auto-rows-[220px] gap-3 sm:gap-4">
           {images.map((img, i) => (
             <ScrollReveal key={i} delay={i * 0.08} className={img.className}>
               <div className="relative w-full h-full rounded-2xl overflow-hidden group">

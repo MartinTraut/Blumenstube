@@ -22,7 +22,7 @@ export function Hero() {
       </div>
 
       {/* Content – centered */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 w-full text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 md:py-40 w-full text-center">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -33,9 +33,11 @@ export function Hero() {
           <Image
             src="/logo-new.png"
             alt="Blumenstube Neuenstadt"
-            width={600}
-            height={400}
-            className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto drop-shadow-2xl"
+            width={1536}
+            height={1024}
+            className="h-36 sm:h-48 md:h-56 lg:h-64 xl:h-72 w-auto drop-shadow-2xl"
+            quality={100}
+            unoptimized
           />
         </motion.div>
 
@@ -43,7 +45,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1] mb-6"
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1] mb-6"
         >
           Blumen, die{" "}
           <span className="text-brand">Geschichten</span> erzählen.
@@ -68,14 +70,14 @@ export function Hero() {
         >
           <a
             href="tel:071396708"
-            className="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1"
+            className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-primary text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-sm sm:text-base font-semibold hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1"
           >
             <Phone className="w-5 h-5" />
             Jetzt anrufen
           </a>
           <a
             href="/kontakt"
-            className="inline-flex items-center justify-center gap-3 bg-white/20 backdrop-blur-sm text-white border border-white/40 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/25 transition-all duration-300 hover:-translate-y-1"
+            className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-white/20 backdrop-blur-sm text-white border border-white/40 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-sm sm:text-base font-semibold hover:bg-white/25 transition-all duration-300 hover:-translate-y-1"
           >
             <Send className="w-5 h-5" />
             Anfrage senden

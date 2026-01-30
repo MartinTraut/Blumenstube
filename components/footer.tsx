@@ -4,17 +4,19 @@ import { Phone, Mail, Clock, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-white/90 pb-24 md:pb-0">
+    <footer className="bg-foreground text-white/90 pb-20 md:pb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand */}
           <div>
             <Image
               src="/logo-new.png"
               alt="Blumenstube Neuenstadt"
-              width={200}
-              height={133}
-              className="h-20 w-auto mb-5 drop-shadow-lg"
+              width={384}
+              height={256}
+              className="h-16 sm:h-20 w-auto mb-5 drop-shadow-lg"
+              quality={100}
+              unoptimized
             />
             <p className="text-white/75 text-sm leading-relaxed">
               Das etwas andere Blumenfachgeschäft – seit 1995 in Neuenstadt am
