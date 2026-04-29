@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero";
 import { TrustBar } from "@/components/trust-bar";
+import { PromotionsSection } from "@/components/promotions-section";
 import { ServicesGrid } from "@/components/services-grid";
 import { OccasionsSection } from "@/components/occasions-section";
 import { OpeningHours } from "@/components/opening-hours";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <TrustBar />
+      <PromotionsSection />
       <ServicesGrid />
       <OccasionsSection />
       <OpeningHours />

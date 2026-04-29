@@ -6,9 +6,9 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white/90 pb-20 md:pb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           {/* Brand */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <Image
               src="/logo-new.png"
               alt="Blumenstube Neuenstadt"
@@ -18,7 +18,7 @@ export function Footer() {
               quality={100}
               unoptimized
             />
-            <p className="text-white/75 text-sm leading-relaxed">
+            <p className="text-white/75 text-sm leading-relaxed max-w-md">
               Das etwas andere Blumenfachgeschäft – seit 1995 in Neuenstadt am
               Kocher. Qualität, Handwerk und Leidenschaft für Blumen.
             </p>
@@ -54,25 +54,55 @@ export function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-5">
               Kontakt
             </h4>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-sm text-white/70">
-                <Phone className="w-4 h-4 text-primary shrink-0" />
-                <a href="tel:071396708" className="hover:text-white transition-colors">
-                  07139 6708
+            <ul className="space-y-5">
+              <li className="flex items-start gap-3">
+                <span className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-primary" />
+                </span>
+                <a
+                  href="tel:071396708"
+                  className="group/contact min-w-0 flex-1"
+                >
+                  <span className="block text-xs text-white/55 leading-tight">
+                    Anrufen
+                  </span>
+                  <span className="block text-base font-medium text-white/90 group-hover/contact:text-primary transition-colors mt-0.5">
+                    07139 6708
+                  </span>
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-white/70">
-                <Mail className="w-4 h-4 text-primary shrink-0" />
+              <li className="flex items-start gap-3">
+                <span className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                  <Mail className="w-4 h-4 text-primary" />
+                </span>
                 <a
                   href="mailto:blumenstube-neuenstadt@t-online.de"
-                  className="hover:text-white transition-colors break-all"
+                  className="group/contact min-w-0 flex-1"
                 >
-                  blumenstube-neuenstadt@t-online.de
+                  <span className="block text-xs text-white/55 leading-tight">
+                    E-Mail schreiben
+                  </span>
+                  <span className="block text-sm font-medium text-white/90 group-hover/contact:text-primary transition-colors mt-0.5 break-words">
+                    blumenstube-neuenstadt
+                    <wbr />@t-online.de
+                  </span>
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-sm text-white/70">
-                <MapPin className="w-4 h-4 text-brand-green shrink-0 mt-0.5" />
-                <span>Neuenstadt am Kocher</span>
+              <li className="flex items-start gap-3">
+                <span className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                  <MapPin className="w-4 h-4 text-brand-green" />
+                </span>
+                <Link
+                  href="/ihr-weg-zu-uns"
+                  className="group/contact min-w-0 flex-1"
+                >
+                  <span className="block text-xs text-white/55 leading-tight">
+                    Standort
+                  </span>
+                  <span className="block text-base font-medium text-white/90 group-hover/contact:text-brand-green transition-colors mt-0.5">
+                    Neuenstadt am Kocher
+                  </span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -82,14 +112,25 @@ export function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-5">
               Öffnungszeiten
             </h4>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-3 text-sm text-white/75">
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <div className="space-y-1">
-                  <p>Mo–Fr: 09:00–12:30 &amp; 14:00–18:00</p>
-                  <p>Sa: 09:00–14:00</p>
-                  <p>So: 10:00–12:00</p>
-                  <p className="text-white/60 mt-2 text-xs">
+                <div className="space-y-1.5 leading-snug">
+                  <p>
+                    <span className="text-white/55">Mo–Fr</span>{" "}
+                    <span className="text-white/90">
+                      09:00–12:30 &amp; 14:00–18:00
+                    </span>
+                  </p>
+                  <p>
+                    <span className="text-white/55">Sa</span>{" "}
+                    <span className="text-white/90">09:00–14:00</span>
+                  </p>
+                  <p>
+                    <span className="text-white/55">So</span>{" "}
+                    <span className="text-white/90">10:00–12:00</span>
+                  </p>
+                  <p className="text-white/55 text-xs pt-1">
                     Letzter Sonntag im Monat geschlossen
                   </p>
                 </div>

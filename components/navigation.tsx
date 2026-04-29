@@ -40,14 +40,16 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo: text on home hero, image otherwise */}
-          <Link href="/" className="relative shrink-0">
+          {/* Logo: text on home hero, image otherwise — fixed-size container, opacity-only crossfade */}
+          <Link
+            href="/"
+            aria-label="Blumenstube Neuenstadt – Startseite"
+            className="relative shrink-0 flex items-center h-12 md:h-16 w-[210px] md:w-[260px]"
+          >
             {/* Text name – only on homepage hero (not scrolled) */}
             <span
-              className={`text-xl md:text-2xl font-serif font-bold tracking-tight transition-all duration-300 ${
-                darkHeader
-                  ? "opacity-100 text-white drop-shadow-lg"
-                  : "opacity-0 absolute pointer-events-none"
+              className={`absolute left-0 top-1/2 -translate-y-1/2 whitespace-nowrap text-xl md:text-2xl font-serif font-bold tracking-tight text-white drop-shadow-lg transition-opacity duration-300 ${
+                darkHeader ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >
               Blumenstube{" "}
@@ -60,10 +62,8 @@ export function Navigation() {
               alt="Blumenstube Neuenstadt – Kranz- und Girlandenbinderei"
               width={384}
               height={256}
-              className={`h-12 md:h-16 w-auto object-contain transition-all duration-300 ${
-                darkHeader
-                  ? "opacity-0 absolute pointer-events-none"
-                  : "opacity-100"
+              className={`absolute left-0 top-1/2 -translate-y-1/2 h-12 md:h-16 w-auto object-contain transition-opacity duration-300 ${
+                darkHeader ? "opacity-0 pointer-events-none" : "opacity-100"
               }`}
               priority
               quality={100}
