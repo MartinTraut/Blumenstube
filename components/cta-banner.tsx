@@ -18,7 +18,7 @@ export function CtaBanner() {
             etwas Schönes gestalten
           </h2>
           <p className="text-white/90 text-lg mb-12 max-w-2xl mx-auto">
-            Ob spontaner Strauß oder große Feier – rufen Sie uns an oder
+            Ob spontaner Strauß oder große Feier, rufen Sie uns an oder
             schreiben Sie uns. Wir freuen uns auf Ihre Ideen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

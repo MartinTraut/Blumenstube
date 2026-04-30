@@ -43,7 +43,7 @@ export function Navigation() {
           {/* Logo: text on home hero, image otherwise — fixed-size container, opacity-only crossfade */}
           <Link
             href="/"
-            aria-label="Blumenstube Neuenstadt – Startseite"
+            aria-label="Blumenstube Neuenstadt, Startseite"
             className="relative shrink-0 flex items-center h-12 md:h-16 w-[210px] md:w-[260px]"
           >
             {/* Text name – only on homepage hero (not scrolled) */}
@@ -59,7 +59,7 @@ export function Navigation() {
             {/* Logo image – visible when scrolled or on subpages */}
             <Image
               src="/logo-new.png"
-              alt="Blumenstube Neuenstadt – Kranz- und Girlandenbinderei"
+              alt="Blumenstube Neuenstadt, Kranz- und Girlandenbinderei"
               width={384}
               height={256}
               className={`absolute left-0 top-1/2 -translate-y-1/2 h-12 md:h-16 w-auto object-contain transition-opacity duration-300 ${

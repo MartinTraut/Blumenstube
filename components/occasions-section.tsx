@@ -13,7 +13,7 @@ const occasions = [
   {
     icon: Heart,
     title: "Hochzeit",
-    text: "Von der Beratung bis zum letzten Blütenblatt – Ihr perfekter Tag.",
+    text: "Von der Beratung bis zum letzten Blütenblatt: Ihr perfekter Tag.",
     color: "from-primary/15 to-primary/5",
   },
   {
@@ -54,7 +54,7 @@ export function OccasionsSection() {
               <br className="hidden sm:block" /> als Worte
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto text-lg">
-              Egal ob großes Fest oder kleine Geste – wir finden die passenden
+              Egal ob großes Fest oder kleine Geste, wir finden die passenden
               Blumen für Ihren Moment.
             </p>
           </div>

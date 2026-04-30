@@ -8,62 +8,62 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80",
+    src: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=1400&q=85",
     alt: "Bunter Frühlingsstrauß",
     span: "col-span-1 row-span-1 md:col-span-2 md:row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=1200&q=85",
     alt: "Elegantes Gesteck in warmen Tönen",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=85",
     alt: "Hochzeitsstrauß mit Rosen",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=1200&q=85",
     alt: "Blumenarrangement in Rosa und Weiß",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=1200&q=85",
     alt: "Frischer Strauß mit Wildblumen",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1400&q=85",
     alt: "Tischdekoration für eine Feier",
     span: "col-span-1 row-span-1 md:col-span-2 md:row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=600&q=80",
-    alt: "Zarte Blüten in Pastelltönen",
+    src: "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=1200&q=85",
+    alt: "Zarte Pastellblüte",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=1200&q=85",
     alt: "Blumenstrauß mit Eukalyptus",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1494336956603-39a3f0e3e754?w=600&q=80",
-    alt: "Lavendel und Feldblumen",
+    src: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1200&q=85",
+    alt: "Sommerwiese mit Wildblumen",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1471696035578-3d8c78d99571?w=600&q=80",
-    alt: "Rosen in verschiedenen Farben",
+    src: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1200&q=85",
+    alt: "Rose in zartem Rosé",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=1200&q=85",
     alt: "Pfingstrosen Bouquet",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?w=1200&q=85",
     alt: "Sommerliche Blumenpracht",
     span: "col-span-1 row-span-1",
   },
@@ -98,7 +98,7 @@ export function ImpressionenContent() {
               Impressionen
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Lassen Sie sich von unserer Arbeit inspirieren – Sträuße,
+              Lassen Sie sich von unserer Arbeit inspirieren: Sträuße,
               Gestecke, Hochzeitsfloristik und vieles mehr.
             </p>
           </ScrollReveal>
@@ -187,7 +187,7 @@ export function ImpressionenContent() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src={galleryImages[lightbox].src.replace("w=600", "w=1600").replace("w=800", "w=1600")}
+                src={galleryImages[lightbox].src.replace(/w=\d+/, "w=2000").replace(/q=\d+/, "q=90")}
                 alt={galleryImages[lightbox].alt}
                 fill
                 className="object-contain"

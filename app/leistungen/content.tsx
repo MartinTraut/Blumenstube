@@ -10,12 +10,12 @@ const services = [
     title: "Sträuße & Gestecke",
     subtitle: "Für jeden Anlass das Richtige",
     description:
-      "Ob Geburtstag, Jubiläum, Taufe oder einfach so – wir binden individuelle Sträuße und Gestecke mit saisonalen Blumen und viel Liebe zum Detail. Klassisch, modern oder ausgefallen – ganz nach Ihrem Geschmack.",
+      "Ob Geburtstag, Jubiläum, Taufe oder einfach so. Wir binden individuelle Sträuße und Gestecke mit saisonalen Blumen und viel Liebe zum Detail. Klassisch, modern oder ausgefallen, ganz nach Ihrem Geschmack.",
     image:
-      "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800&q=80",
+      "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=1400&q=85",
     steps: [
       { title: "Anlass mitteilen", text: "Sagen Sie uns, wofür die Blumen sind." },
-      { title: "Wir gestalten", text: "Frisch und saisonal – nach Ihren Wünschen gebunden." },
+      { title: "Wir gestalten", text: "Frisch und saisonal, nach Ihren Wünschen gebunden." },
       { title: "Abholen oder liefern", text: "Pünktlich und perfekt für Ihren Moment." },
     ],
   },
@@ -24,12 +24,12 @@ const services = [
     title: "Hochzeitsfloristik",
     subtitle: "Klassisch, modern oder retro",
     description:
-      "Ihr großer Tag verdient besondere Blumen. Von Brautstrauß und Anstecker über Autoschmuck und Tischdekorationen bis zur Raumgestaltung mit Leihpalmen – wir begleiten Sie von der ersten Idee bis zum letzten Blütenblatt.",
+      "Ihr großer Tag verdient besondere Blumen. Von Brautstrauß und Anstecker über Autoschmuck und Tischdekorationen bis zur Raumgestaltung mit Leihpalmen begleiten wir Sie von der ersten Idee bis zum letzten Blütenblatt.",
     image:
-      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80",
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1400&q=85",
     steps: [
-      { title: "Beratungsgespräch", text: "Persönlich und unverbindlich – wir lernen Ihre Wünsche kennen." },
-      { title: "Konzept & Planung", text: "Farben, Stil und Blumenauswahl – abgestimmt auf Ihre Feier." },
+      { title: "Beratungsgespräch", text: "Persönlich und unverbindlich. Wir lernen Ihre Wünsche kennen." },
+      { title: "Konzept & Planung", text: "Farben, Stil und Blumenauswahl, abgestimmt auf Ihre Feier." },
       { title: "Umsetzung am Tag", text: "Wir liefern, dekorieren und sorgen für perfekte Blumenmomente." },
     ],
   },
@@ -38,13 +38,13 @@ const services = [
     title: "Eventdekoration",
     subtitle: "Privat & geschäftlich",
     description:
-      "Taufen, Kommunionen, Konfirmationen, Firmenfeiern oder Jubiläen – wir gestalten Tischdekorationen und Raumarrangements, die Ihre Veranstaltung in Szene setzen. Professionell, kreativ und zuverlässig.",
+      "Taufen, Kommunionen, Konfirmationen, Firmenfeiern oder Jubiläen: Wir gestalten Tischdekorationen und Raumarrangements, die Ihre Veranstaltung in Szene setzen. Professionell, kreativ und zuverlässig.",
     image:
-      "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=800&q=80",
+      "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1400&q=85",
     steps: [
       { title: "Anlass beschreiben", text: "Art der Veranstaltung, Größe und Ihre Vorstellungen." },
       { title: "Dekorationskonzept", text: "Wir erstellen ein stimmiges Konzept für Ihren Event." },
-      { title: "Aufbau & Dekoration", text: "Pünktlicher Aufbau vor Ort – Sie genießen Ihre Feier." },
+      { title: "Aufbau & Dekoration", text: "Pünktlicher Aufbau vor Ort. Sie genießen Ihre Feier." },
     ],
   },
   {
@@ -52,13 +52,13 @@ const services = [
     title: "Trauerfloristik",
     subtitle: "Einfühlsam & würdevoll",
     description:
-      "In schweren Zeiten gestalten wir einfühlsam und mit Respekt: Sargschmuck, Kränze, Trauergestecke und Kirchendekoration. Wir beraten Sie persönlich und sorgen für eine würdevolle Umsetzung – auch kurzfristig.",
+      "In schweren Zeiten gestalten wir einfühlsam und mit Respekt: Sargschmuck, Kränze, Trauergestecke und Kirchendekoration. Wir beraten Sie persönlich und sorgen für eine würdevolle Umsetzung, auch kurzfristig.",
     image:
       "https://i.pinimg.com/736x/3a/7a/53/3a7a5326dd32f7b427e503fec5e1227e.jpg",
     steps: [
-      { title: "Persönliche Beratung", text: "Einfühlsam und diskret – wir nehmen uns Zeit für Sie." },
+      { title: "Persönliche Beratung", text: "Einfühlsam und diskret. Wir nehmen uns Zeit für Sie." },
       { title: "Individuelle Gestaltung", text: "Kränze, Gestecke und Schmuck nach Ihren Wünschen." },
-      { title: "Zuverlässige Lieferung", text: "Pünktlich und respektvoll – direkt zur Trauerhalle oder Kirche." },
+      { title: "Zuverlässige Lieferung", text: "Pünktlich und respektvoll, direkt zur Trauerhalle oder Kirche." },
     ],
   },
   {
@@ -66,12 +66,12 @@ const services = [
     title: "Fleuropservice",
     subtitle: "Blumengrüße weltweit",
     description:
-      "Über das Fleurop-Partnernetzwerk können Sie Blumengrüße in ganz Deutschland und in über 150 Länder versenden. Bestellen Sie bei uns – und ein Florist vor Ort bindet den Strauß frisch und liefert ihn persönlich.",
+      "Über das Fleurop-Partnernetzwerk können Sie Blumengrüße in ganz Deutschland und in über 150 Länder versenden. Bestellen Sie bei uns, und ein Florist vor Ort bindet den Strauß frisch und liefert ihn persönlich.",
     image:
-      "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=800&q=80",
+      "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=1400&q=85",
     steps: [
       { title: "Strauß auswählen", text: "Persönlich bei uns oder telefonisch bestellen." },
-      { title: "Empfänger angeben", text: "Adresse – egal ob um die Ecke oder am anderen Ende der Welt." },
+      { title: "Empfänger angeben", text: "Adresse, egal ob um die Ecke oder am anderen Ende der Welt." },
       { title: "Frisch geliefert", text: "Ein Fleurop-Partner vor Ort bindet und liefert den Strauß." },
     ],
   },
@@ -188,7 +188,7 @@ export function LeistungenContent() {
               Sie haben eine Idee? Wir setzen sie um.
             </h2>
             <p className="text-white/80 text-lg mb-8">
-              Rufen Sie uns an oder schicken Sie uns eine Anfrage – wir beraten
+              Rufen Sie uns an oder schicken Sie uns eine Anfrage. Wir beraten
               Sie persönlich und unverbindlich.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

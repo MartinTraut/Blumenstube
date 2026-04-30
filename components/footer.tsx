@@ -19,7 +19,7 @@ export function Footer() {
               unoptimized
             />
             <p className="text-white/75 text-sm leading-relaxed max-w-md">
-              Das etwas andere Blumenfachgeschäft – seit 1995 in Neuenstadt am
+              Das etwas andere Blumenfachgeschäft, seit 1995 in Neuenstadt am
               Kocher. Qualität, Handwerk und Leidenschaft für Blumen.
             </p>
           </div>

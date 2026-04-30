@@ -7,28 +7,38 @@ import { ArrowRight } from "lucide-react";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=500&q=80",
+    src: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=900&q=85",
     alt: "Bunter Blumenstrauß",
     className: "col-span-1 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=500&q=80",
+    src: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=900&q=85",
     alt: "Elegantes Gesteck",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&q=80",
+    src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900&q=85",
     alt: "Hochzeitsfloristik",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=500&q=80",
+    src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=900&q=85",
     alt: "Blumenarrangement",
     className: "col-span-1 row-span-1",
   },
   {
     src: "/logo.jpg",
     alt: "Arrangement der Blumenstube",
+    className: "col-span-1 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=900&q=85",
+    alt: "Rosa Tulpen in einer Glasvase",
+    className: "col-span-1 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1530092285049-1c42085fd395?w=900&q=85",
+    alt: "Weiße Kosmeen vor blauem Himmel",
     className: "col-span-1 row-span-1",
   },
 ];

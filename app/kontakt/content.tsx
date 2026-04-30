@@ -47,7 +47,7 @@ export function KontaktContent() {
               Sprechen Sie uns an
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ob telefonisch, per E-Mail oder über unser Kontaktformular – wir
+              Ob telefonisch, per E-Mail oder über unser Kontaktformular: wir
               sind für Sie da und beraten Sie gerne persönlich.
             </p>
           </ScrollReveal>
@@ -122,7 +122,7 @@ export function KontaktContent() {
                     Anfrage senden
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    Beschreiben Sie uns Ihren Wunsch – wir melden uns
+                    Beschreiben Sie uns Ihren Wunsch. Wir melden uns
                     schnellstmöglich bei Ihnen.
                   </p>
 
@@ -293,7 +293,7 @@ export function KontaktContent() {
                     Schnelle Antwort gewünscht?
                   </h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Rufen Sie uns direkt an – wir beraten Sie sofort und
+                    Rufen Sie uns direkt an. Wir beraten Sie sofort und
                     persönlich.
                   </p>
                   <a

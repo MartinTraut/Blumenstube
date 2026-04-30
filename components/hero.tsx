@@ -10,7 +10,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=2400&q=85"
           alt="Wunderschöner Blumenstrauß"
           fill
           className="object-cover scale-105"
@@ -58,7 +58,7 @@ export function Hero() {
           className="text-lg md:text-xl text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto"
         >
           Seit 1995 gestalten wir mit Leidenschaft und Handwerk individuelle
-          Floristik für jeden Anlass – persönlich, frisch und mit Liebe zum
+          Floristik für jeden Anlass, persönlich, frisch und mit Liebe zum
           Detail.
         </motion.p>
 

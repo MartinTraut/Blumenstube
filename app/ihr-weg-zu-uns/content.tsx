@@ -2,11 +2,8 @@
 
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { MapPin, Phone, Mail, Clock, AlertCircle, Navigation } from "lucide-react";
-import { useState } from "react";
 
 export function WegContent() {
-  const [mapLoaded, setMapLoaded] = useState(false);
-
   return (
     <>
       {/* Hero */}
@@ -20,7 +17,7 @@ export function WegContent() {
               Ihr Weg zu uns
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Besuchen Sie uns in Neuenstadt am Kocher – wir freuen uns auf Sie.
+              Besuchen Sie uns in Neuenstadt am Kocher. Wir freuen uns auf Sie.
             </p>
           </ScrollReveal>
         </div>
@@ -121,33 +118,12 @@ export function WegContent() {
               <ScrollReveal>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-border/50">
                   <div className="relative aspect-[4/3] sm:aspect-[16/10] bg-secondary">
-                    {!mapLoaded ? (
-                      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8">
-                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                          <Navigation className="w-10 h-10 text-primary" />
-                        </div>
-                        <h3 className="text-xl font-serif font-bold text-foreground text-center">
-                          Karte laden
-                        </h3>
-                        <p className="text-sm text-muted-foreground text-center max-w-sm">
-                          Klicken Sie auf den Button, um die interaktive Karte zu
-                          laden. Dabei werden Daten von OpenStreetMap übertragen.
-                        </p>
-                        <button
-                          onClick={() => setMapLoaded(true)}
-                          className="bg-primary text-white px-6 py-3 rounded-xl font-medium hover:bg-primary/90 transition-colors"
-                        >
-                          Karte anzeigen
-                        </button>
-                      </div>
-                    ) : (
-                      <iframe
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=9.31%2C49.21%2C9.35%2C49.24&layer=mapnik&marker=49.2263%2C9.3322"
-                        className="absolute inset-0 w-full h-full"
-                        title="Karte: Blumenstube Neuenstadt"
-                        loading="lazy"
-                      />
-                    )}
+                    <iframe
+                      src="https://www.openstreetmap.org/export/embed.html?bbox=9.31%2C49.21%2C9.35%2C49.24&layer=mapnik&marker=49.2263%2C9.3322"
+                      className="absolute inset-0 w-full h-full"
+                      title="Karte: Blumenstube Neuenstadt"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div>

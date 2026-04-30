@@ -9,31 +9,31 @@ const services = [
   {
     title: "Sträuße & Gestecke",
     description:
-      "Individuell gebundene Sträuße und Gestecke für jeden Anlass – von klassisch elegant bis modern und ausgefallen.",
+      "Individuell gebundene Sträuße und Gestecke für jeden Anlass, von klassisch elegant bis modern und ausgefallen.",
     image:
-      "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=600&q=80",
+      "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=1000&q=85",
     href: "/leistungen#straeusse",
   },
   {
     title: "Hochzeitsfloristik",
     description:
-      "Brautsträuße, Autoschmuck, Tischdeko und Raumgestaltung – wir machen Ihren großen Tag unvergesslich schön.",
+      "Brautsträuße, Autoschmuck, Tischdeko und Raumgestaltung. Wir machen Ihren großen Tag unvergesslich schön.",
     image:
-      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80",
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1000&q=85",
     href: "/leistungen#hochzeit",
   },
   {
     title: "Eventdekoration",
     description:
-      "Stimmungsvolle Dekorationen für Firmenfeiern, Jubiläen, Taufen und private Feste – professionell und kreativ.",
+      "Stimmungsvolle Dekorationen für Firmenfeiern, Jubiläen, Taufen und private Feste, professionell und kreativ.",
     image:
-      "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=600&q=80",
+      "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1000&q=85",
     href: "/leistungen#events",
   },
   {
     title: "Trauerfloristik",
     description:
-      "Einfühlsam und würdevoll – Sargschmuck, Kränze, Gestecke und Kirchendekoration in respektvollem Gedenken.",
+      "Einfühlsam und würdevoll: Sargschmuck, Kränze, Gestecke und Kirchendekoration in respektvollem Gedenken.",
     image:
       "https://i.pinimg.com/736x/3a/7a/53/3a7a5326dd32f7b427e503fec5e1227e.jpg",
     href: "/leistungen#trauer",
@@ -41,9 +41,9 @@ const services = [
   {
     title: "Fleuropservice",
     description:
-      "Über das Fleurop-Netzwerk versenden Sie Blumengrüße – deutschlandweit und in über 150 Länder weltweit.",
+      "Über das Fleurop-Netzwerk versenden Sie Blumengrüße, deutschlandweit und in über 150 Länder weltweit.",
     image:
-      "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&q=80",
+      "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=1000&q=85",
     href: "/leistungen#fleurop",
   },
 ];
@@ -63,7 +63,7 @@ export function ServicesGrid() {
               <span className="text-primary"> und Handwerk</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Von der kleinen Aufmerksamkeit bis zur großen Feier – wir
+              Von der kleinen Aufmerksamkeit bis zur großen Feier. Wir
               gestalten Blumenarrangements, die begeistern.
             </p>
           </div>

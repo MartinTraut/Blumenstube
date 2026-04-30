@@ -37,10 +37,10 @@ export const promotions: Promotion[] = [
     badge: "Frühlingsaktion",
     title: "Frische Tulpen­sträuße zum Saisonpreis",
     description:
-      "Handgebundene Sträuße aus regionalen Tulpen – jeden Tag frisch in der Blumenstube. Kommen Sie vorbei oder rufen Sie kurz an, wir richten alles für Sie her.",
+      "Handgebundene Sträuße aus regionalen Tulpen, jeden Tag frisch in der Blumenstube. Kommen Sie vorbei oder rufen Sie kurz an, wir richten alles für Sie her.",
     validUntil: "2026-05-15",
     image:
-      "https://images.unsplash.com/photo-1469259943454-aa100abba749?w=1600&q=80",
+      "https://images.unsplash.com/photo-1469259943454-aa100abba749?w=1600&q=85",
     highlight: "ab 14,90 €",
     ctaLabel: "Strauß sichern",
     ctaHref: "tel:071396708",
@@ -50,7 +50,7 @@ export const promotions: Promotion[] = [
     badge: "Hochzeits­saison",
     title: "Persönliche Hochzeits­beratung",
     description:
-      "Brautstrauß, Tischdeko, Autoschmuck – wir nehmen uns Zeit für Ihren Tag. Vereinbaren Sie ein unverbindliches Beratungsgespräch.",
+      "Brautstrauß, Tischdeko, Autoschmuck. Wir nehmen uns Zeit für Ihren Tag. Vereinbaren Sie ein unverbindliches Beratungsgespräch.",
     validUntil: "ganzjährig",
     ctaLabel: "Termin anfragen",
     ctaHref: "/kontakt",
@@ -60,7 +60,7 @@ export const promotions: Promotion[] = [
     badge: "Service",
     title: "Lieferung in Neuenstadt & Umgebung",
     description:
-      "Sie schaffen es nicht persönlich vorbei? Wir liefern Ihren Strauß zuverlässig zum Empfänger – auch kurzfristig am selben Tag.",
+      "Sie schaffen es nicht persönlich vorbei? Wir liefern Ihren Strauß zuverlässig zum Empfänger, auch kurzfristig am selben Tag.",
     ctaLabel: "Lieferung anfragen",
     ctaHref: "tel:071396708",
     highlight: "auf Wunsch am selben Tag",

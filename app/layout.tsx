@@ -12,11 +12,11 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Blumenstube Neuenstadt – Ihr Blumenfachgeschäft seit 1995",
+    default: "Blumenstube Neuenstadt | Ihr Blumenfachgeschäft seit 1995",
     template: "%s | Blumenstube Neuenstadt",
   },
   description:
-    "Blumenstube Neuenstadt – Ihr Blumenfachgeschäft seit 1995. Sträuße, Hochzeitsfloristik, Trauerfloristik, Eventdekoration und Fleuropservice in Neuenstadt am Kocher.",
+    "Blumenstube Neuenstadt: Ihr Blumenfachgeschäft seit 1995. Sträuße, Hochzeitsfloristik, Trauerfloristik, Eventdekoration und Fleuropservice in Neuenstadt am Kocher.",
   keywords: [
     "Blumenstube Neuenstadt",
     "Blumenladen Neuenstadt",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Eventdekoration",
   ],
   openGraph: {
-    title: "Blumenstube Neuenstadt – Ihr Blumenfachgeschäft seit 1995",
+    title: "Blumenstube Neuenstadt | Ihr Blumenfachgeschäft seit 1995",
     description:
       "Sträuße, Hochzeitsfloristik, Trauerfloristik und mehr. Besuchen Sie uns in Neuenstadt am Kocher.",
     locale: "de_DE",

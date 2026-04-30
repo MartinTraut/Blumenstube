@@ -5,9 +5,9 @@ import { Clock, AlertCircle, Phone, Mail } from "lucide-react";
 import Image from "next/image";
 
 const hours = [
-  { day: "Montag – Freitag", time: "09:00 – 12:30 & 14:00 – 18:00" },
-  { day: "Samstag", time: "09:00 – 14:00" },
-  { day: "Sonntag", time: "10:00 – 12:00" },
+  { day: "Montag bis Freitag", time: "09:00 bis 12:30 & 14:00 bis 18:00" },
+  { day: "Samstag", time: "09:00 bis 14:00" },
+  { day: "Sonntag", time: "10:00 bis 12:00" },
 ];
 
 export function OpeningHours() {
@@ -46,7 +46,7 @@ export function OpeningHours() {
               </h2>
               <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
                 Wir freuen uns auf Ihren Besuch in Neuenstadt am Kocher.
-                Kommen Sie vorbei – auch ohne Termin.
+                Kommen Sie vorbei, auch ohne Termin.
               </p>
 
               <div className="space-y-0 mb-8 bg-secondary rounded-2xl overflow-hidden">
