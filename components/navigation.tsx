@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -40,35 +39,28 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo: text on home hero, image otherwise — fixed-size container, opacity-only crossfade */}
+          {/* Wordmark logo: white on dark hero, dark on scroll/subpages — accent color shifts pink */}
           <Link
             href="/"
             aria-label="Blumenstube Neuenstadt, Startseite"
-            className="relative shrink-0 flex items-center h-12 md:h-16 w-[210px] md:w-[260px]"
+            className="relative shrink-0 flex items-center h-12 md:h-16"
           >
-            {/* Text name – only on homepage hero (not scrolled) */}
             <span
-              className={`absolute left-0 top-1/2 -translate-y-1/2 whitespace-nowrap text-xl md:text-2xl font-serif font-bold tracking-tight text-white drop-shadow-lg transition-opacity duration-300 ${
-                darkHeader ? "opacity-100" : "opacity-0 pointer-events-none"
+              className={`whitespace-nowrap text-xl md:text-2xl font-serif font-bold tracking-tight transition-colors duration-300 ${
+                darkHeader
+                  ? "text-white drop-shadow-lg"
+                  : "text-foreground"
               }`}
             >
               Blumenstube{" "}
-              <span className="text-brand-green">Neuenstadt</span>
+              <span
+                className={`transition-colors duration-300 ${
+                  darkHeader ? "text-brand-green" : "text-primary"
+                }`}
+              >
+                Neuenstadt
+              </span>
             </span>
-
-            {/* Logo image – visible when scrolled or on subpages */}
-            <Image
-              src="/logo-new.png"
-              alt="Blumenstube Neuenstadt, Kranz- und Girlandenbinderei"
-              width={384}
-              height={256}
-              className={`absolute left-0 top-1/2 -translate-y-1/2 h-12 md:h-16 w-auto object-contain transition-opacity duration-300 ${
-                darkHeader ? "opacity-0 pointer-events-none" : "opacity-100"
-              }`}
-              priority
-              quality={100}
-              unoptimized
-            />
           </Link>
 
           {/* Desktop Nav */}
